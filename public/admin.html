@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - ISAI MARKETING AGENCY</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://ukno.in/uploads/images/ISAI_MARKETING_AGENCY__featured_145921516.png">
+
+  <!-- Bootstrap 5 CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Admin CSS -->
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="bg-light">
+
+  <!-- LOGIN SCREEN (Displays if unauthenticated) -->
+  <div id="loginScreen" class="d-flex align-items-center justify-content-center min-vh-100 p-3">
+    <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5 login-card bg-white" style="max-width: 440px; width: 100%;">
+      <div class="text-center mb-4">
+        <img src="https://d171jb2uwdr9zn.cloudfront.net/unsafe/0x200/middle/smart/filters:strip_icc():strip_exif():format(webp)/https://ukno.in/uploads/images/ISAI_MARKETING_AGENCY__featured_145921516.png" 
+             alt="Logo" class="rounded mb-2 shadow-xs" style="width: 70px; height: 70px; object-fit: cover;" onerror="this.src='https://placehold.co/70x70/0d6efd/white?text=ISAI'">
+        <h4 class="fw-bold mb-1">ISAI MARKETING</h4>
+        <p class="text-muted small">Store Management & Admin Portal</p>
+      </div>
+
+      <div id="loginAlert" class="alert alert-danger d-none py-2 small"></div>
+
+      <form id="loginForm">
+        <div class="mb-3">
+          <label class="form-label small fw-semibold">Admin Email / Username</label>
+          <div class="input-group">
+            <span class="input-group-text bg-light"><i class="bi bi-person-fill"></i></span>
+            <input type="text" class="form-control" id="loginUser" placeholder="isai@1991" required>
+          </div>
+          <small class="text-muted d-block mt-1" style="font-size: 0.75rem;">Default ID: <code>isai@1991</code></small>
+        </div>
+
+        <div class="mb-4">
+          <label class="form-label small fw-semibold">Password</label>
+          <div class="input-group">
+            <span class="input-group-text bg-light"><i class="bi bi-key-fill"></i></span>
+            <input type="password" class="form-control" id="loginPass" placeholder="••••••••" required>
+          </div>
+          <small class="text-muted d-block mt-1" style="font-size: 0.75rem;">Default Password: <code>Tamil@1991</code></small>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100 rounded-pill py-2 fw-semibold" id="loginSubmitBtn">
+          <i class="bi bi-box-arrow-in-right me-1"></i> Access Admin Dashboard
+        </button>
+      </form>
+
+      <div class="text-center mt-4 pt-3 border-top">
+        <a href="index.html" class="text-decoration-none small text-muted">
+          <i class="bi bi-arrow-left me-1"></i> Back to Public Store
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADMIN DASHBOARD (Hidden until authenticated) -->
+  <div id="dashboardScreen" class="d-none">
+    
+    <!-- Top Admin Header -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top px-3 py-2 shadow-sm">
+      <div class="d-flex align-items-center gap-2">
+        <span class="navbar-brand fw-bold fs-6 mb-0 d-flex align-items-center gap-2">
+          <i class="bi bi-sliders text-warning"></i>
+          <span>Isai Admin Portal</span>
+        </span>
+        <span class="badge bg-success-subtle text-success small border border-success-subtle d-none d-md-inline" id="gitSyncBadge">
+          <i class="bi bi-github me-1"></i> GitHub Synced
+        </span>
+      </div>
+
+      <div class="d-flex align-items-center gap-2 ms-auto">
+        <button class="btn btn-sm btn-outline-warning rounded-pill" id="quickGitPushBtn" title="Sync changes to GitHub repository">
+          <i class="bi bi-cloud-arrow-up-fill me-1"></i> Push to GitHub
+        </button>
+        <a href="index.html" target="_blank" class="btn btn-sm btn-outline-light rounded-pill">
+          <i class="bi bi-globe me-1"></i> View Live Store
+        </a>
+        <button class="btn btn-sm btn-danger rounded-pill" id="logoutBtn">
+          <i class="bi bi-box-arrow-right"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <!-- Sidebar Navigation -->
+        <nav class="col-md-3 col-lg-2 d-md-block bg-white sidebar shadow-sm p-3 border-end">
+          <div class="d-flex flex-column gap-1">
+            <button class="admin-nav-btn active" data-tab="overviewTab">
+              <i class="bi bi-speedometer2"></i> Dashboard Overview
+            </button>
+            <button class="admin-nav-btn" data-tab="productsTab">
+              <i class="bi bi-box-seam"></i> Manage Products
+            </button>
+            <button class="admin-nav-btn" data-tab="servicesTab">
+              <i class="bi bi-wrench"></i> Manage Services
+            </button>
+            <button class="admin-nav-btn" data-tab="offersTab">
+              <i class="bi bi-megaphone"></i> Offers & EMI Bar
+            </button>
+            <button class="admin-nav-btn" data-tab="storeInfoTab">
+              <i class="bi bi-shop"></i> Store & Contact Info
+            </button>
+            <button class="admin-nav-btn" data-tab="propertiesTab">
+              <i class="bi bi-houses"></i> Real Estate Listings
+            </button>
+            <button class="admin-nav-btn" data-tab="reviewsTab">
+              <i class="bi bi-star"></i> Customer Reviews
+            </button>
+            <button class="admin-nav-btn" data-tab="enquiriesTab">
+              <i class="bi bi-inbox"></i> Inquiries & Orders
+              <span class="badge bg-primary ms-auto" id="enquiryCountBadge">0</span>
+            </button>
+            <button class="admin-nav-btn" data-tab="gitTab">
+              <i class="bi bi-git"></i> GitHub Auto-Sync
+            </button>
+          </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="col-md-9 ms-sm-auto col-lg-10 p-4">
+          
+          <!-- Alert notification message -->
+          <div id="adminGlobalAlert" class="alert d-none shadow-sm alert-dismissible fade show" role="alert">
+            <span id="adminAlertMsg"></span>
+            <button type="button" class="btn-close" onclick="this.parentElement.classList.add('d-none')"></button>
+          </div>
+
+          <!-- TAB 1: OVERVIEW -->
+          <div class="tab-pane active" id="overviewTab">
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+              <div>
+                <h3 class="fw-bold mb-1">Welcome, Isai Admin</h3>
+                <p class="text-muted small mb-0">Changes saved here immediately update the website and sync with GitHub.</p>
+              </div>
+              <button class="btn btn-primary rounded-pill px-3" onclick="saveAllChanges(true)">
+                <i class="bi bi-check2-circle me-1"></i> Save All & Push to GitHub
+              </button>
+            </div>
+
+            <!-- Stats Row -->
+            <div class="row g-3 mb-4">
+              <div class="col-xl-3 col-sm-6">
+                <div class="card border-0 shadow-sm rounded-4 p-3 bg-white">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                      <span class="text-muted small d-block">Total Appliances</span>
+                      <h3 class="fw-bold mb-0 text-primary" id="statProducts">0</h3>
+                    </div>
+                    <div class="stat-icon bg-primary-subtle text-primary">
+                      <i class="bi bi-box-seam fs-4"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-sm-6">
+                <div class="card border-0 shadow-sm rounded-4 p-3 bg-white">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                      <span class="text-muted small d-block">Active Services</span>
+                      <h3 class="fw-bold mb-0 text-success" id="statServices">0</h3>
+                    </div>
+                    <div class="stat-icon bg-success-subtle text-success">
+                      <i class="bi bi-wrench-adjustable fs-4"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-sm-6">
+                <div class="card border-0 shadow-sm rounded-4 p-3 bg-white">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                      <span class="text-muted small d-block">Customer Reviews</span>
+                      <h3 class="fw-bold mb-0 text-warning" id="statReviews">0</h3>
+                    </div>
+                    <div class="stat-icon bg-warning-subtle text-warning">
+                      <i class="bi bi-star-fill fs-4"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-sm-6">
+                <div class="card border-0 shadow-sm rounded-4 p-3 bg-white">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                      <span class="text-muted small d-block">Orders & Enquiries</span>
+                      <h3 class="fw-bold mb-0 text-danger" id="statEnquiries">0</h3>
+                    </div>
+                    <div class="stat-icon bg-danger-subtle text-danger">
+                      <i class="bi bi-chat-left-dots-fill fs-4"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Action Cards -->
+            <div class="row g-4">
+              <div class="col-lg-6">
+                <div class="card border-0 shadow-sm rounded-4 p-4 bg-white h-100">
+                  <h5 class="fw-bold mb-3"><i class="bi bi-lightning-charge-fill text-warning me-2"></i>Quick Actions</h5>
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-outline-primary text-start p-3 rounded-3" onclick="openAddProductModal()">
+                      <i class="bi bi-plus-circle-fill text-primary me-2 fs-5"></i> <strong>Add New Home Appliance</strong>
+                      <div class="small text-muted ms-4">Add a new ceiling fan, cooler, induction stove, or iron box with price.</div>
+                    </button>
+                    <button class="btn btn-outline-success text-start p-3 rounded-3" onclick="switchTab('offersTab')">
+                      <i class="bi bi-megaphone-fill text-success me-2 fs-5"></i> <strong>Update EMI & Offer Announcements</strong>
+                      <div class="small text-muted ms-4">Change top banner text and festive offer discounts.</div>
+                    </button>
+                    <button class="btn btn-outline-dark text-start p-3 rounded-3" onclick="switchTab('storeInfoTab')">
+                      <i class="bi bi-telephone-fill text-dark me-2 fs-5"></i> <strong>Update Contact Numbers & Address</strong>
+                      <div class="small text-muted ms-4">Edit phone lines, WhatsApp number, and working hours.</div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="card border-0 shadow-sm rounded-4 p-4 bg-white h-100">
+                  <h5 class="fw-bold mb-3"><i class="bi bi-github text-dark me-2"></i>GitHub Synchronization</h5>
+                  <p class="small text-muted mb-3">
+                    Connected Repository: <code>https://github.com/sanjayalok2222-pixel/isai</code> (Branch: <code>main</code>)
+                  </p>
+                  <div class="p-3 bg-light rounded-3 mb-3 border">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                      <span class="small fw-semibold">Auto-Commit on Save:</span>
+                      <span class="badge bg-success">ACTIVE</span>
+                    </div>
+                    <div class="small text-muted">Whenever you add, edit, or delete items, changes are committed and pushed automatically!</div>
+                  </div>
+                  <button class="btn btn-dark w-100 rounded-pill py-2" onclick="triggerManualGitPush()">
+                    <i class="bi bi-cloud-arrow-up me-1"></i> Trigger Git Push Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 2: PRODUCTS MANAGEMENT -->
+          <div class="tab-pane d-none" id="productsTab">
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+              <div>
+                <h3 class="fw-bold mb-1">Manage Appliances & Products</h3>
+                <p class="text-muted small mb-0">Add, edit prices, descriptions, and availability for all store items.</p>
+              </div>
+              <button class="btn btn-primary rounded-pill px-3" onclick="openAddProductModal()">
+                <i class="bi bi-plus-lg me-1"></i> Add New Product
+              </button>
+            </div>
+
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden bg-white">
+              <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                  <thead class="table-light">
+                    <tr>
+                      <th style="width: 70px;">Image</th>
+                      <th>Product Name</th>
+                      <th>Category</th>
+                      <th>Offer Price</th>
+                      <th>MRP</th>
+                      <th>Badge</th>
+                      <th class="text-end">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="adminProductsTableBody">
+                    <!-- Populated via JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 3: SERVICES MANAGEMENT -->
+          <div class="tab-pane d-none" id="servicesTab">
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+              <div>
+                <h3 class="fw-bold mb-1">Manage Store Services</h3>
+                <p class="text-muted small mb-0">Winding works, RO plant services, and doorstep repairs.</p>
+              </div>
+              <button class="btn btn-primary rounded-pill px-3" onclick="openAddServiceModal()">
+                <i class="bi bi-plus-lg me-1"></i> Add New Service
+              </button>
+            </div>
+
+            <div class="row g-3" id="adminServicesGrid">
+              <!-- Populated via JS -->
+            </div>
+          </div>
+
+          <!-- TAB 4: OFFERS & EMI -->
+          <div class="tab-pane d-none" id="offersTab">
+            <div class="card border-0 shadow-sm rounded-4 p-4 bg-white" style="max-width: 700px;">
+              <h3 class="fw-bold mb-3">Offers & Top Announcement Bar</h3>
+              <p class="text-muted small mb-4">Edit promotional ticker text and EMI banner displayed across the site.</p>
+
+              <form id="offerForm">
+                <div class="mb-3">
+                  <label class="form-label small fw-semibold">Offer Badge (Top Bar)</label>
+                  <input type="text" class="form-control" id="adminOfferBadge" placeholder="e.g. EASY EMI COMING SOON....">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label small fw-semibold">Offer Headline</label>
+                  <input type="text" class="form-control" id="adminOfferTitle" placeholder="e.g. FESTIVE MEGA OFFER & EASY EMI">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label small fw-semibold">Offer Description</label>
+                  <textarea class="form-control" id="adminOfferDesc" rows="3" placeholder="Description of discount or EMI terms..."></textarea>
+                </div>
+                <div class="mb-4">
+                  <label class="form-label small fw-semibold">Promotional Image URL</label>
+                  <input type="url" class="form-control" id="adminOfferImg" placeholder="https://...">
+                </div>
+                <button type="submit" class="btn btn-primary rounded-pill px-4 py-2">
+                  <i class="bi bi-save me-1"></i> Save Offer Settings
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- TAB 5: STORE INFO -->
+          <div class="tab-pane d-none" id="storeInfoTab">
+            <div class="card border-0 shadow-sm rounded-4 p-4 bg-white" style="max-width: 800px;">
+              <h3 class="fw-bold mb-3">Store Profile & Contact Settings</h3>
+              <p class="text-muted small mb-4">Update business name, promoter credits, phone numbers, and shop address.</p>
+
+              <form id="storeInfoForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label small fw-semibold">Store Name</label>
+                    <input type="text" class="form-control" id="adminStoreName" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small fw-semibold">Sub Title / Division</label>
+                    <input type="text" class="form-control" id="adminStoreSub">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small fw-semibold">Promoter Name</label>
+                    <input type="text" class="form-control" id="adminStorePromoter">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small fw-semibold">Primary WhatsApp Number</label>
+                    <input type="text" class="form-control" id="adminStoreWhatsapp" placeholder="918248611861" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small fw-semibold">Official Email</label>
+                    <input type="email" class="form-control" id="adminStoreEmail">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small fw-semibold">Contact Phone Numbers (Comma separated)</label>
+                    <input type="text" class="form-control" id="adminStorePhones">
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label small fw-semibold">Store Address</label>
+                    <textarea class="form-control" id="adminStoreAddress" rows="2"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label small fw-semibold">About Store (English)</label>
+                    <textarea class="form-control" id="adminStoreAboutEn" rows="3"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label small fw-semibold">About Store (தமிழ் - Tamil)</label>
+                    <textarea class="form-control" id="adminStoreAboutTa" rows="3"></textarea>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <button type="submit" class="btn btn-primary rounded-pill px-4 py-2">
+                      <i class="bi bi-save me-1"></i> Save Store Profile
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- TAB 6: REAL ESTATE -->
+          <div class="tab-pane d-none" id="propertiesTab">
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+              <div>
+                <h3 class="fw-bold mb-1">Yazh City Property Picks</h3>
+                <p class="text-muted small mb-0">Houses, plots, and farmland listings in Salem region.</p>
+              </div>
+              <button class="btn btn-primary rounded-pill px-3" onclick="openAddPropertyModal()">
+                <i class="bi bi-plus-lg me-1"></i> Add Property Listing
+              </button>
+            </div>
+
+            <div class="row g-3" id="adminPropertiesGrid">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <!-- TAB 7: REVIEWS -->
+          <div class="tab-pane d-none" id="reviewsTab">
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+              <div>
+                <h3 class="fw-bold mb-1">Customer Reviews & Testimonials</h3>
+                <p class="text-muted small mb-0">Manage reviews displayed on the website.</p>
+              </div>
+              <button class="btn btn-primary rounded-pill px-3" onclick="openAddReviewAdminModal()">
+                <i class="bi bi-plus-lg me-1"></i> Add Testimonial
+              </button>
+            </div>
+
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden bg-white">
+              <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Author</th>
+                      <th>Rating</th>
+                      <th>Date</th>
+                      <th>Comment</th>
+                      <th class="text-end">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="adminReviewsTableBody">
+                    <!-- Populated via JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 8: INQUIRIES & ORDERS -->
+          <div class="tab-pane d-none" id="enquiriesTab">
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+              <div>
+                <h3 class="fw-bold mb-1">Customer Orders & Enquiries</h3>
+                <p class="text-muted small mb-0">Leads received through website contact and booking forms.</p>
+              </div>
+              <button class="btn btn-outline-danger btn-sm rounded-pill" onclick="clearAllEnquiries()">
+                <i class="bi bi-trash me-1"></i> Clear Inquiries
+              </button>
+            </div>
+
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden bg-white">
+              <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Date</th>
+                      <th>Customer Name</th>
+                      <th>Contact</th>
+                      <th>Interest / Service</th>
+                      <th>Message</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="adminEnquiriesTableBody">
+                    <!-- Populated via JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 9: GITHUB AUTO-SYNC & LOGS -->
+          <div class="tab-pane d-none" id="gitTab">
+            <div class="card border-0 shadow-sm rounded-4 p-4 bg-white" style="max-width: 800px;">
+              <h3 class="fw-bold mb-3"><i class="bi bi-git text-danger me-2"></i>GitHub Synchronization Center</h3>
+              <p class="text-muted small mb-4">Manage automated commit and push actions directly from this dashboard.</p>
+
+              <div class="mb-4 p-3 bg-light rounded-3 border">
+                <h6 class="fw-bold mb-2">Remote Repository:</h6>
+                <div class="d-flex align-items-center gap-2">
+                  <input type="text" class="form-control font-monospace" value="https://github.com/sanjayalok2222-pixel/isai" readonly>
+                  <a href="https://github.com/sanjayalok2222-pixel/isai" target="_blank" class="btn btn-outline-dark">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label small fw-semibold">Custom Commit Message (Optional)</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="customCommitMsg" placeholder="e.g. Updated fan prices and festive offer">
+                  <button class="btn btn-primary" onclick="triggerManualGitPush()">
+                    <i class="bi bi-cloud-arrow-up-fill me-1"></i> Commit & Push
+                  </button>
+                </div>
+              </div>
+
+              <h6 class="fw-bold mb-2">Git Status & Sync Log:</h6>
+              <div class="p-3 bg-dark text-success font-monospace small rounded-3" style="max-height: 250px; overflow-y: auto;" id="gitTerminalLog">
+                [Ready] Connected to repository https://github.com/sanjayalok2222-pixel/isai
+              </div>
+            </div>
+          </div>
+
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: ADD / EDIT PRODUCT -->
+  <div class="modal fade" id="productModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content rounded-4 border-0">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title fw-bold" id="productModalTitle">Add New Appliance</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form id="productForm">
+            <input type="hidden" id="prodEditId">
+            <div class="row g-3">
+              <div class="col-md-8">
+                <label class="form-label small fw-semibold">Product Name *</label>
+                <input type="text" class="form-control" id="prodName" placeholder="e.g. Crompton SUREBREEZE 1200mm" required>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label small fw-semibold">Category *</label>
+                <select class="form-select" id="prodCategory" required>
+                  <option value="Ceiling Fans">Ceiling Fans</option>
+                  <option value="Table & Pedestal Fans">Table & Pedestal Fans</option>
+                  <option value="Air Coolers">Air Coolers</option>
+                  <option value="Kitchen Appliances">Kitchen Appliances</option>
+                  <option value="Home Utilities">Home Utilities</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-semibold">Offer / Selling Price (₹) *</label>
+                <input type="number" class="form-control" id="prodPrice" placeholder="2000" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-semibold">MRP Price (₹)</label>
+                <input type="number" class="form-control" id="prodMrp" placeholder="2599">
+              </div>
+              <div class="col-md-8">
+                <label class="form-label small fw-semibold">Image URL</label>
+                <input type="url" class="form-control" id="prodImage" placeholder="https://...">
+              </div>
+              <div class="col-md-4">
+                <label class="form-label small fw-semibold">Badge / Tag</label>
+                <input type="text" class="form-control" id="prodBadge" placeholder="e.g. Best Seller, Popular">
+              </div>
+              <div class="col-12">
+                <label class="form-label small fw-semibold">Description</label>
+                <textarea class="form-control" id="prodDesc" rows="3" placeholder="Specifications, warranty, motor info..."></textarea>
+              </div>
+              <div class="col-12">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="prodInStock" checked>
+                  <label class="form-check-label small fw-semibold" for="prodInStock">Available in Stock</label>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 pt-3 border-top text-end">
+              <button type="button" class="btn btn-light rounded-pill px-4" data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-primary rounded-pill px-4 ms-2">Save Appliance</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: ADD / EDIT SERVICE -->
+  <div class="modal fade" id="serviceModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-4 border-0">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title fw-bold" id="serviceModalTitle">Add Service</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form id="serviceForm">
+            <input type="hidden" id="serviceEditId">
+            <div class="mb-3">
+              <label class="form-label small fw-semibold">Service Title *</label>
+              <input type="text" class="form-control" id="srvTitle" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label small fw-semibold">Badge / Highlight</label>
+              <input type="text" class="form-control" id="srvHighlight" placeholder="e.g. Doorstep Available">
+            </div>
+            <div class="mb-3">
+              <label class="form-label small fw-semibold">Icon Class</label>
+              <input type="text" class="form-control" id="srvIcon" placeholder="bi-wrench">
+            </div>
+            <div class="mb-3">
+              <label class="form-label small fw-semibold">Description *</label>
+              <textarea class="form-control" id="srvDesc" rows="3" required></textarea>
+            </div>
+            <div class="text-end">
+              <button type="submit" class="btn btn-primary rounded-pill px-4">Save Service</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Admin Logic JS -->
+  <script src="js/admin.js"></script>
+</body>
+</html>

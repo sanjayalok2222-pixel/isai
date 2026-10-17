@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISAI MARKETING AGENCY - Home Appliances & Services | Salem</title>
+  <meta name="description" content="Isai Marketing Agency & Yazh City Property Picks, Salem. Premium Home Appliances, RO Purifiers, Ceiling Fan Winding, Motor Rewinding, AC/Fridge Doorstep Services.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://ukno.in/uploads/images/ISAI_MARKETING_AGENCY__featured_145921516.png">
+
+  <!-- Bootstrap 5 CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Tamil+Sangam+MN&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar py-2 text-center text-white" id="announcementBar">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <div class="d-flex align-items-center gap-2">
+        <span class="badge bg-warning text-dark font-monospace fw-bold" id="offerBadge">EASY EMI COMING SOON</span>
+        <span class="small d-none d-md-inline" id="offerText">Best price guarantee with doorstep delivery & installation in Salem!</span>
+      </div>
+      <div class="d-flex align-items-center gap-3 ms-auto small">
+        <span id="storeStatusBadge" class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1">
+          <i class="bi bi-clock-fill me-1"></i> Checking status...
+        </span>
+        <a href="admin.html" class="text-white text-decoration-none admin-link">
+          <i class="bi bi-shield-lock-fill me-1"></i> Admin Portal
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg sticky-top bg-white navbar-light shadow-sm py-2">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="https://d171jb2uwdr9zn.cloudfront.net/unsafe/0x200/middle/smart/filters:strip_icc():strip_exif():format(webp)/https://ukno.in/uploads/images/ISAI_MARKETING_AGENCY__featured_145921516.png" 
+             alt="Isai Marketing Logo" class="brand-logo rounded" onerror="this.src='https://placehold.co/80x80/0d6efd/white?text=ISAI'">
+        <div>
+          <span class="brand-title d-block fw-bold text-primary" id="navStoreName">ISAI MARKETING AGENCY</span>
+          <small class="brand-subtitle text-muted d-block" id="navStoreSub">& Yazh City Property Picks | Salem</small>
+        </div>
+      </a>
+
+      <!-- Mobile Action Buttons -->
+      <div class="d-flex align-items-center gap-2 d-lg-none ms-auto me-2">
+        <a href="tel:+918248611861" class="btn btn-sm btn-outline-primary rounded-circle p-2" title="Call Now">
+          <i class="bi bi-telephone-fill"></i>
+        </a>
+        <a href="https://wa.me/918248611861" target="_blank" class="btn btn-sm btn-success rounded-circle p-2" title="WhatsApp">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+      </div>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Appliances</a></li>
+          <li class="nav-item"><a class="nav-link" href="#properties">Real Estate</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <button class="btn btn-primary btn-sm px-3 rounded-pill position-relative" id="quoteCartBtn" data-bs-toggle="offcanvas" data-bs-target="#quoteCartOffcanvas">
+              <i class="bi bi-receipt me-1"></i> Quote Cart
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartCountBadge">0</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-white py-5 position-relative" id="home">
+    <div class="container py-4 position-relative z-1">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-7">
+          <div class="badge bg-warning text-dark px-3 py-2 rounded-pill mb-3 fw-bold">
+            <i class="bi bi-award-fill me-1"></i> Salem's Trusted Sales & Service Hub
+          </div>
+          <h1 class="display-5 fw-extrabold mb-3" id="heroTitle">ISAI MARKETING AGENCY</h1>
+          <p class="lead text-light mb-4" id="heroTagline">
+            Specialists in Home Appliances, RO Water Purifiers (100L-1000L), Ceiling & Table Fan Winding, Motor Rewinding, and Real Estate Solutions.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a href="https://wa.me/918248611861?text=Hi%20Isai%20Marketing%2C%20I%20am%20looking%20for%20Home%20Appliances%20%2F%20Services" 
+               target="_blank" class="btn btn-success btn-lg px-4 rounded-pill shadow-sm d-flex align-items-center gap-2">
+              <i class="bi bi-whatsapp fs-5"></i> Order on WhatsApp
+            </a>
+            <a href="#products" class="btn btn-outline-light btn-lg px-4 rounded-pill">
+              <i class="bi bi-grid-fill me-1"></i> Browse Products
+            </a>
+            <a href="tel:+918248611861" class="btn btn-light btn-lg px-4 rounded-pill text-primary fw-semibold">
+              <i class="bi bi-telephone-fill me-1"></i> Call Now
+            </a>
+          </div>
+
+          <!-- Highlight Badges -->
+          <div class="d-flex flex-wrap gap-3 text-light small pt-2 border-top border-light border-opacity-25">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-truck text-warning fs-5"></i>
+              <span>Doorstep AC & Appliance Service</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-patch-check-fill text-warning fs-5"></i>
+              <span>Genuine Spares & Best Price</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-geo-alt-fill text-warning fs-5"></i>
+              <span>Shevapet, Salem</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 text-center">
+          <div class="hero-image-wrapper p-3 bg-white bg-opacity-10 rounded-4 shadow-lg border border-light border-opacity-20 backdrop-blur">
+            <img src="https://d171jb2uwdr9zn.cloudfront.net/unsafe/200x200/middle/smart/filters:strip_icc():strip_exif():format(webp)/https://ukno.in/uploads/images/ISAI_MARKETING_AGENCY__featured_796148875.jpg" 
+                 alt="Isai Marketing Featured" class="img-fluid rounded-3 hero-featured-img" onerror="this.src='https://ukno.in/uploads/images/ISAI_MARKETING_AGENCY__featured_145921516.png'">
+            <div class="mt-3 text-white">
+              <h5 class="fw-bold mb-1" id="heroOfferTitle">EASY EMI & SPECIAL DISCOUNTS</h5>
+              <p class="small text-light mb-0" id="heroOfferDesc">Get top brand fans, coolers & stoves with affordable pricing in Salem!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Info Contact Ribbon -->
+  <div class="quick-contact-ribbon bg-light py-3 border-bottom shadow-xs">
+    <div class="container">
+      <div class="row g-3 align-items-center text-center text-md-start">
+        <div class="col-md-3 col-6 d-flex align-items-center gap-2 justify-content-center justify-content-md-start">
+          <div class="icon-circle bg-primary-subtle text-primary">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+          <div class="text-start">
+            <span class="text-muted d-block small">Direct Phone</span>
+            <a href="tel:+918248611861" class="fw-bold text-dark text-decoration-none">+91 8248611861</a>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6 d-flex align-items-center gap-2 justify-content-center justify-content-md-start">
+          <div class="icon-circle bg-success-subtle text-success">
+            <i class="bi bi-whatsapp"></i>
+          </div>
+          <div class="text-start">
+            <span class="text-muted d-block small">Instant WhatsApp</span>
+            <a href="https://wa.me/918248611861" target="_blank" class="fw-bold text-success text-decoration-none">Chat Now</a>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6 d-flex align-items-center gap-2 justify-content-center justify-content-md-start">
+          <div class="icon-circle bg-info-subtle text-info">
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+          <div class="text-start">
+            <span class="text-muted d-block small">Official Email</span>
+            <a href="mailto:enquiry.isaigroups@gmail.com" class="fw-bold text-dark text-decoration-none text-truncate d-inline-block" style="max-width: 170px;">enquiry.isaigroups@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6 d-flex align-items-center gap-2 justify-content-center justify-content-md-start">
+          <div class="icon-circle bg-danger-subtle text-danger">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+          <div class="text-start">
+            <span class="text-muted d-block small">Store Location</span>
+            <a href="#contact" class="fw-bold text-dark text-decoration-none">Shevapet, Salem</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section with Bilingual Support -->
+  <section class="py-5 bg-white" id="about">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6">
+          <div class="section-tag text-primary fw-bold text-uppercase mb-2">About Our Store</div>
+          <h2 class="section-heading fw-bold mb-3" id="aboutHeading">ISAI MARKETING AGENCY & YAZH CITY PROPERTY PICKS</h2>
+          <div class="promoter-badge d-inline-flex align-items-center gap-2 bg-light px-3 py-2 rounded-pill mb-3 border">
+            <i class="bi bi-person-badge-fill text-primary"></i>
+            <span class="fw-semibold text-dark">Promoted by S. Tamilselvan, Salem</span>
+          </div>
+
+          <!-- Language Tabs -->
+          <ul class="nav nav-pills mb-3" id="langTab" role="tablist">
+            <li class="nav-item">
+              <button class="nav-link active btn-sm" id="lang-en-tab" data-bs-toggle="pill" data-bs-target="#lang-en" type="button">English Details</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link btn-sm" id="lang-ta-tab" data-bs-toggle="pill" data-bs-target="#lang-ta" type="button">தமிழ் விவரங்கள் (Tamil)</button>
+            </li>
+          </ul>
+
+          <div class="tab-content border rounded-3 p-3 bg-light-subtle" id="langTabContent">
+            <div class="tab-pane fade show active" id="lang-en" role="tabpanel">
+              <p class="mb-3 text-secondary lh-lg" id="aboutTextEn">
+                Isai Marketing Agency & Yazh City Property Picks is promoted by S.Tamilselvan at Salem. We work hard to provide excellent customer service to all our clients. We are your trusted partner in Salem for premium home appliances, RO water purifiers, and stainless steel (SS) products.
+              </p>
+              <ul class="list-unstyled mb-0 d-grid gap-2 text-secondary">
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Specialized Expertise:</strong> Specialists in ceiling & table fan coil winding, and mixer / grinder motor rewinding.</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Industrial Water Plants:</strong> Commercial RO plants from 100 to 1000 Litres sales & maintenance.</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Real Estate Solutions:</strong> Yazh City Property Picks offers houses, DTCP plots, and farmlands up to 60 km around Salem.</li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="lang-ta" role="tabpanel">
+              <p class="mb-3 text-success fw-medium lh-lg" id="aboutTextTa">
+                Isai Marketing Agency & Yazh City Property Picks-க்கு உங்களை வரவேற்கிறோம்! நாங்கள் உயர்தர பொருட்கள் மற்றும் அனுபவம் வாய்ந்த தொழில்நுட்ப வல்லுநர்களைப் கொண்டு அனைத்து RO வாட்டர் ப்யூரிஃபைர் & ஸ்பேர்ஸ், வாஷிங் மெஷின், மிக்ஸி, கிரைண்டர், சீலிங் ஃபேன், டேபிள் ஃபேன், வாட்டர் ஹீட்டர், இண்டக்ஷன் ஸ்டவ், கேஸ் ஸ்டவ் உள்ளிட்ட அனைத்து வகையான வீட்டு உபயோக பொருட்களும் சிறந்த முறையில் சேல்ஸ் மற்றும் சர்வீஸ் செய்து தருகிறோம்.
+              </p>
+              <ul class="list-unstyled mb-0 d-grid gap-2 text-secondary">
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>சீலிங் மற்றும் டேபிள் ஃபேன் வைண்டிங் வேலைகள், மோட்டார்களுக்கான வைண்டிங் வேலைகள் சிறப்பான முறையில் செய்யப்படும்.</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>SS பொருட்கள் சிறந்த முறையில் ஆர்டரின் பெயரில் செய்து தரப்படும்.</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>சேலத்தில் சுமார் 60 கி.மீ. தொலைவில் வீடு, நிலம், பண்ணை நிலம் வாங்க விற்க அணுகவும்.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="card h-100 border-0 shadow-sm rounded-4 p-3 bg-primary-subtle text-primary">
+                <i class="bi bi-stars fs-1 mb-2"></i>
+                <h4 class="fw-bold mb-1">5.0 / 5.0</h4>
+                <p class="small mb-0 text-muted">Customer Rating (Ukno Verified)</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card h-100 border-0 shadow-sm rounded-4 p-3 bg-success-subtle text-success">
+                <i class="bi bi-tools fs-1 mb-2"></i>
+                <h4 class="fw-bold mb-1">100% Guaranteed</h4>
+                <p class="small mb-0 text-muted">Expert Rewinding & Service</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card h-100 border-0 shadow-sm rounded-4 p-3 bg-warning-subtle text-warning-emphasis">
+                <i class="bi bi-droplet-half fs-1 mb-2"></i>
+                <h4 class="fw-bold mb-1">100L - 1000L</h4>
+                <p class="small mb-0 text-muted">RO Water Purifiers & Plants</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card h-100 border-0 shadow-sm rounded-4 p-3 bg-danger-subtle text-danger">
+                <i class="bi bi-geo-alt-fill fs-1 mb-2"></i>
+                <h4 class="fw-bold mb-1">Salem & 60km</h4>
+                <p class="small mb-0 text-muted">Real Estate & Doorstep Delivery</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-5 bg-light" id="services">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="badge bg-primary-subtle text-primary fw-bold text-uppercase px-3 py-2 rounded-pill">What We Do</span>
+        <h2 class="display-6 fw-bold mt-2">Our Specialized Services</h2>
+        <p class="text-muted">Top-quality sales, installation, winding, and maintenance by certified technicians in Salem.</p>
+      </div>
+
+      <div class="row g-4" id="servicesGrid">
+        <!-- Rendered dynamically via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Catalog Section -->
+  <section class="py-5 bg-white" id="products">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-3">
+        <div>
+          <span class="badge bg-primary-subtle text-primary fw-bold text-uppercase px-3 py-2 rounded-pill">Shop Appliances</span>
+          <h2 class="display-6 fw-bold mt-2 mb-1">Home Appliances Collection</h2>
+          <p class="text-muted mb-0">Original brand fans, air coolers, induction stoves, and iron boxes at wholesale offer prices.</p>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <input type="text" id="productSearch" class="form-control rounded-pill px-3" placeholder="Search appliances..." style="max-width: 260px;">
+        </div>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="category-filter-wrapper mb-4 overflow-auto pb-2">
+        <div class="d-flex gap-2" id="categoryTabs">
+          <button class="btn btn-outline-primary btn-sm rounded-pill active" data-category="all">All Appliances</button>
+          <button class="btn btn-outline-primary btn-sm rounded-pill" data-category="Ceiling Fans">Ceiling Fans</button>
+          <button class="btn btn-outline-primary btn-sm rounded-pill" data-category="Table & Pedestal Fans">Table & Tower Fans</button>
+          <button class="btn btn-outline-primary btn-sm rounded-pill" data-category="Air Coolers">Air Coolers</button>
+          <button class="btn btn-outline-primary btn-sm rounded-pill" data-category="Kitchen Appliances">Kitchen Appliances</button>
+          <button class="btn btn-outline-primary btn-sm rounded-pill" data-category="Home Utilities">Home Utilities</button>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="row g-4" id="productsGrid">
+        <!-- Rendered dynamically via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Real Estate Section (Yazh City Property Picks) -->
+  <section class="py-5 bg-light" id="properties">
+    <div class="container">
+      <div class="row align-items-center mb-4">
+        <div class="col-md-8">
+          <span class="badge bg-success-subtle text-success fw-bold text-uppercase px-3 py-2 rounded-pill">Property Solutions</span>
+          <h2 class="display-6 fw-bold mt-2 mb-1">Yazh City Property Picks</h2>
+          <p class="text-muted mb-0">Buy and sell residential homes, DTCP approved plots, and agricultural farmlands in Salem & up to 60 km.</p>
+        </div>
+        <div class="col-md-4 text-md-end mt-3 mt-md-0">
+          <a href="https://wa.me/918248611861?text=Hi%20S.Tamilselvan%20sir%2C%20I%20am%20interested%20in%20Yazh%20City%20Property%20Picks%20Salem" 
+             target="_blank" class="btn btn-success rounded-pill px-4">
+            <i class="bi bi-whatsapp me-1"></i> Inquire Property
+          </a>
+        </div>
+      </div>
+
+      <div class="row g-4" id="propertiesGrid">
+        <!-- Rendered dynamically via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews & Testimonials Section -->
+  <section class="py-5 bg-white" id="reviews">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-3">
+        <div>
+          <span class="badge bg-warning-subtle text-warning-emphasis fw-bold text-uppercase px-3 py-2 rounded-pill">Customer Feedback</span>
+          <h2 class="display-6 fw-bold mt-2 mb-1">What Our Customers Say</h2>
+          <p class="text-muted mb-0">Real reviews from satisfied clients across Salem for appliance sales & motor winding.</p>
+        </div>
+        <div>
+          <button class="btn btn-outline-primary rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#addReviewModal">
+            <i class="bi bi-pencil-square me-1"></i> Write a Review
+          </button>
+        </div>
+      </div>
+
+      <div class="row g-4" id="reviewsGrid">
+        <!-- Rendered dynamically via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="py-5 bg-light" id="gallery">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-4">
+        <span class="badge bg-secondary-subtle text-secondary fw-bold text-uppercase px-3 py-2 rounded-pill">Shop Showcase</span>
+        <h2 class="display-6 fw-bold mt-2">Our Store & Workshop Gallery</h2>
+        <p class="text-muted">Pictures of our appliances showroom, rewinding workshop, and happy customer deliveries.</p>
+      </div>
+
+      <div class="row g-3" id="galleryGrid">
+        <!-- Rendered dynamically via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Store Schedule & Contact Section -->
+  <section class="py-5 bg-white border-top" id="contact">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Working Schedule -->
+        <div class="col-lg-5">
+          <div class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-light">
+            <h4 class="fw-bold mb-3 d-flex align-items-center gap-2">
+              <i class="bi bi-clock-history text-primary"></i> Working Schedule
+            </h4>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <span class="fw-bold">Current Status:</span>
+              <span class="badge bg-success" id="scheduleStatusPill">Open Now</span>
+            </div>
+
+            <ul class="list-group list-group-flush rounded-3 bg-white border mb-4" id="scheduleList">
+              <!-- Rendered via JS -->
+            </ul>
+
+            <h5 class="fw-bold mb-2">Connect with Us</h5>
+            <div class="d-flex gap-2">
+              <a href="https://www.instagram.com/isai_marketing_agencies?utm_source=qr&igsh=dTNxaTkwczE0cGlo" target="_blank" class="btn btn-outline-danger rounded-circle p-2" title="Instagram">
+                <i class="bi bi-instagram fs-5"></i>
+              </a>
+              <a href="https://www.youtube.com/@yazhcitypropertypicks-wn7hn" target="_blank" class="btn btn-outline-danger rounded-circle p-2" title="YouTube">
+                <i class="bi bi-youtube fs-5"></i>
+              </a>
+              <a href="https://www.google.com/search?kgmid=/g/11x1qnc36n&hl=en-IN&q=ISAI+MARKETING+%26+REWINDING+WORKS" target="_blank" class="btn btn-outline-primary rounded-circle p-2" title="Google Business">
+                <i class="bi bi-google fs-5"></i>
+              </a>
+              <a href="https://wa.me/918248611861" target="_blank" class="btn btn-outline-success rounded-circle p-2" title="WhatsApp">
+                <i class="bi bi-whatsapp fs-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact & Enquiry Form -->
+        <div class="col-lg-7">
+          <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+            <h4 class="fw-bold mb-3 d-flex align-items-center gap-2">
+              <i class="bi bi-envelope-paper-fill text-primary"></i> Contact & Service Booking
+            </h4>
+            <p class="text-muted small mb-4">Send us your inquiry for home appliances purchase, fan winding, RO water purifier service, or real estate guidance.</p>
+
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label small fw-semibold">Your Name *</label>
+                  <input type="text" class="form-control" id="contactName" placeholder="Enter your full name" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small fw-semibold">Phone Number *</label>
+                  <input type="tel" class="form-control" id="contactPhone" placeholder="e.g. 9876543210" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small fw-semibold">Email Address (Optional)</label>
+                  <input type="email" class="form-control" id="contactEmail" placeholder="name@email.com">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small fw-semibold">Service / Interest</label>
+                  <select class="form-select" id="contactService">
+                    <option value="Home Appliances Purchase">Home Appliances Purchase</option>
+                    <option value="RO Purifier Sales / Service">RO Purifier Sales / Service</option>
+                    <option value="Ceiling & Table Fan Winding">Ceiling & Table Fan Winding</option>
+                    <option value="Doorstep AC / Fridge Service">Doorstep AC / Fridge Service</option>
+                    <option value="Motor Rewinding Works">Motor Rewinding Works</option>
+                    <option value="SS Custom Products">SS Custom Products</option>
+                    <option value="Yazh City Real Estate">Yazh City Real Estate</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label small fw-semibold">Your Message / Requirement</label>
+                  <textarea class="form-control" id="contactMessage" rows="3" placeholder="Tell us which model or service you need..."></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary px-4 rounded-pill w-100 py-2 fw-semibold" id="contactSubmitBtn">
+                    <i class="bi bi-send-fill me-1"></i> Send Enquiry to Store
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div id="contactAlert" class="mt-3 d-none"></div>
+
+            <div class="store-address-box mt-4 pt-3 border-top">
+              <h6 class="fw-bold mb-1"><i class="bi bi-geo-alt-fill text-danger me-1"></i> Store Address:</h6>
+              <p class="text-secondary small mb-2" id="storeAddress">
+                Near Srimaan Theater, Sandhaipettai Main Road, Shevapet, Salem, Salem Taluk, Salem District, Tamil Nadu 636002, India
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="https://www.google.com/maps/search/?api=1&query=ISAI+MARKETING+Shevapet+Salem" target="_blank" class="btn btn-sm btn-outline-danger rounded-pill">
+                  <i class="bi bi-map-fill me-1"></i> Get Directions on Google Maps
+                </a>
+                <button onclick="window.print()" class="btn btn-sm btn-outline-secondary rounded-pill">
+                  <i class="bi bi-printer-fill me-1"></i> Print Store Info
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4 pb-4 border-bottom border-secondary">
+        <div class="col-lg-4 col-md-6">
+          <h5 class="fw-bold text-primary mb-3">ISAI MARKETING AGENCY</h5>
+          <p class="small text-light text-opacity-75 mb-3" id="footerAbout">
+            Promoted by S. Tamilselvan at Salem. We provide sales, service, rewinding works, and real estate solutions with high quality and affordable pricing.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="https://www.instagram.com/isai_marketing_agencies?utm_source=qr&igsh=dTNxaTkwczE0cGlo" target="_blank" class="btn btn-sm btn-outline-light rounded-circle"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@yazhcitypropertypicks-wn7hn" target="_blank" class="btn btn-sm btn-outline-light rounded-circle"><i class="bi bi-youtube"></i></a>
+            <a href="https://wa.me/918248611861" target="_blank" class="btn btn-sm btn-outline-light rounded-circle"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h6 class="fw-bold mb-3 text-warning">Quick Links</h6>
+          <ul class="list-unstyled small d-grid gap-2 text-light text-opacity-75">
+            <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="#about" class="text-white text-decoration-none">About Us</a></li>
+            <li><a href="#services" class="text-white text-decoration-none">Services</a></li>
+            <li><a href="#products" class="text-white text-decoration-none">Appliances</a></li>
+            <li><a href="#properties" class="text-white text-decoration-none">Real Estate</a></li>
+            <li><a href="#reviews" class="text-white text-decoration-none">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h6 class="fw-bold mb-3 text-warning">Appliances & Works</h6>
+          <ul class="list-unstyled small d-grid gap-2 text-light text-opacity-75">
+            <li>Crompton & Havells Fans</li>
+            <li>Bajaj & Usha High-Speed Fans</li>
+            <li>Desert & Tower Air Coolers</li>
+            <li>Preeti & V-Guard Induction Stoves</li>
+            <li>RO Purifier Domestic & Plants</li>
+            <li>Motor & Fan Coil Rewinding</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h6 class="fw-bold mb-3 text-warning">Contact & Admin</h6>
+          <p class="small text-light text-opacity-75 mb-2"><i class="bi bi-telephone me-2"></i> +91 8248611861</p>
+          <p class="small text-light text-opacity-75 mb-2"><i class="bi bi-envelope me-2"></i> enquiry.isaigroups@gmail.com</p>
+          <p class="small text-light text-opacity-75 mb-3"><i class="bi bi-geo-alt me-2"></i> Shevapet, Salem - 636002</p>
+          <a href="admin.html" class="btn btn-outline-warning btn-sm rounded-pill px-3">
+            <i class="bi bi-gear-fill me-1"></i> Admin Portal
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-3 text-center small text-light text-opacity-50 d-flex flex-wrap justify-content-between">
+        <span>© <span id="currentYear"></span> ISAI MARKETING AGENCY & Yazh City Property Picks. All Rights Reserved.</span>
+        <span>Original listing: <a href="https://vkno.in/isaimarketing" target="_blank" class="text-light text-decoration-none">vkno.in/isaimarketing</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Action Buttons -->
+  <div class="floating-action-buttons">
+    <a href="https://wa.me/918248611861" target="_blank" class="fab-btn fab-whatsapp shadow-lg" title="WhatsApp Us">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+    <a href="tel:+918248611861" class="fab-btn fab-call shadow-lg" title="Call Us">
+      <i class="bi bi-telephone-fill"></i>
+    </a>
+  </div>
+
+  <!-- Offcanvas: Quote Cart / Selection Drawer -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="quoteCartOffcanvas">
+    <div class="offcanvas-header bg-primary text-white">
+      <h5 class="offcanvas-title fw-bold"><i class="bi bi-receipt me-2"></i> Your Quotation Cart</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <div id="cartItemsList" class="flex-grow-1 overflow-auto">
+        <!-- Rendered dynamically -->
+      </div>
+      <div class="cart-summary pt-3 border-top mt-auto">
+        <div class="d-flex justify-content-between fw-bold mb-3 fs-5">
+          <span>Estimated Total:</span>
+          <span class="text-primary" id="cartTotalVal">₹0</span>
+        </div>
+        <button class="btn btn-success w-100 rounded-pill py-2 mb-2 fw-semibold" id="sendCartWhatsAppBtn">
+          <i class="bi bi-whatsapp me-1"></i> Send Quote on WhatsApp
+        </button>
+        <button class="btn btn-outline-secondary w-100 rounded-pill btn-sm" id="clearCartBtn">
+          Clear Selection
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Write a Review -->
+  <div class="modal fade" id="addReviewModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-4 border-0">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title fw-bold"><i class="bi bi-star-fill text-warning me-2"></i> Submit Customer Review</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form id="reviewForm">
+            <div class="mb-3">
+              <label class="form-label small fw-semibold">Your Name *</label>
+              <input type="text" class="form-control" id="reviewAuthor" placeholder="e.g. Ramesh Kumar" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label small fw-semibold">Rating *</label>
+              <select class="form-select" id="reviewRating">
+                <option value="5" selected>⭐⭐⭐⭐⭐ (5 / 5) - Excellent</option>
+                <option value="4">⭐⭐⭐⭐ (4 / 5) - Very Good</option>
+                <option value="3">⭐⭐⭐ (3 / 5) - Good</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label small fw-semibold">Your Review / Experience *</label>
+              <textarea class="form-control" id="reviewText" rows="3" placeholder="Share your experience regarding products or services..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 rounded-pill py-2 fw-semibold">
+              Submit Review
+            </button>
+          </form>
+          <div id="reviewAlert" class="mt-3 d-none"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Image Gallery Viewer -->
+  <div class="modal fade" id="imageModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-header border-0 p-0 mb-2">
+          <button type="button" class="btn btn-light btn-sm rounded-circle ms-auto" data-bs-dismiss="modal">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+        <div class="modal-body text-center p-0">
+          <img src="" id="modalImg" class="img-fluid rounded-4 shadow-lg" alt="Gallery Preview">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+:root {
+  --primary: #0d6efd;
+  --primary-dark: #0b5ed7;
+  --secondary: #198754;
+  --dark-blue: #0b2545;
+  --accent-gold: #ffc107;
+  --font-main: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  color: #333333;
+  background-color: #f8f9fa;
+  overflow-x: hidden;
+}
+
+/* Announcement Bar */
+.announcement-bar {
+  background: linear-gradient(90deg, #134e5e 0%, #71b280 100%);
+  font-size: 0.9rem;
+}
+
+.admin-link:hover {
+  text-decoration: underline !important;
+  color: #ffc107 !important;
+}
+
+/* Navbar */
+.brand-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.brand-title {
+  font-size: 1.15rem;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.brand-subtitle {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.5rem 0.85rem !important;
+  color: #495057 !important;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--primary) !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #0b2545 0%, #134074 50%, #001220 100%);
+  border-bottom: 4px solid var(--accent-gold);
+}
+
+.backdrop-blur {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.hero-featured-img {
+  max-height: 250px;
+  width: auto;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 8px;
+}
+
+/* Quick contact ribbon */
+.icon-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+/* Service Box */
+.service-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-radius: 1rem;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08) !important;
+}
+
+.service-icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+}
+
+/* Product Cards */
+.product-card {
+  transition: all 0.25s ease;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid #e9ecef;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1) !important;
+  border-color: var(--primary);
+}
+
+.product-img-box {
+  height: 200px;
+  position: relative;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.product-img-box img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-img-box img {
+  transform: scale(1.06);
+}
+
+.badge-discount {
+  background-color: #dc3545;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+}
+
+.strike-mrp {
+  text-decoration: line-through;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.price-offer {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0d6efd;
+}
+
+/* Real Estate Property Cards */
+.property-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.25s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+}
+
+.property-img-box {
+  height: 200px;
+  position: relative;
+}
+
+.property-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Review Cards */
+.review-card {
+  border-radius: 1rem;
+  border: 1px solid #e9ecef;
+  transition: transform 0.2s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-3px);
+  border-color: #dee2e6;
+}
+
+.star-rating {
+  color: #ffc107;
+  letter-spacing: 2px;
+}
+
+/* Gallery Box */
+.gallery-item {
+  height: 200px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+/* Floating Action Buttons */
+.floating-action-buttons {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fab-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fab-btn:hover {
+  transform: scale(1.1);
+  color: #fff;
+}
+
+.fab-whatsapp {
+  background-color: #25d366;
+}
+
+.fab-call {
+  background-color: #0d6efd;
+}
+
+/* Utilities */
+.max-w-700 {
+  max-width: 700px;
+}

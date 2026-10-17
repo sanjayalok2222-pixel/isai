@@ -1,0 +1,416 @@
+{
+  "storeInfo": {
+    "name": "ISAI MARKETING AGENCY",
+    "subName": "& Yazh City Property Picks / Rewinding Works",
+    "promoter": "S. Tamilselvan",
+    "tagline": "Your Trusted Partner in Salem for Home Appliances, RO Purifiers & Electrical Rewinding Works",
+    "address": "Near Srimaan Theater, Sandhaipettai Main Road, Shevapet, Salem, Tamil Nadu 636002, India",
+    "phones": [
+      "+91 8248611861",
+      "+91 8124401259",
+      "+91 9443029079",
+      "+91 8270555745"
+    ],
+    "primaryPhone": "+918248611861",
+    "whatsappNumber": "918248611861",
+    "email": "enquiry.isaigroups@gmail.com",
+    "rating": "5.0",
+    "reviewsCount": 11,
+    "viewsCount": 2703,
+    "location": "Salem, Tamil Nadu",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=ISAI+MARKETING+Shevapet+Salem",
+    "social": {
+      "instagram": "https://www.instagram.com/isai_marketing_agencies?utm_source=qr&igsh=dTNxaTkwczE0cGlo",
+      "youtube": "https://www.youtube.com/@yazhcitypropertypicks-wn7hn",
+      "google": "https://www.google.com/search?kgmid=/g/11x1qnc36n&hl=en-IN&q=ISAI+MARKETING+%26+REWINDING+WORKS"
+    },
+    "schedule": {
+      "monday": "09:00 AM - 09:00 PM (Lunch: 01:00 PM - 02:00 PM)",
+      "tuesday": "09:00 AM - 09:00 PM (Lunch: 01:00 PM - 02:00 PM)",
+      "wednesday": "09:00 AM - 09:00 PM (Lunch: 01:00 PM - 02:00 PM)",
+      "thursday": "09:00 AM - 09:00 PM (Lunch: 01:00 PM - 02:00 PM)",
+      "friday": "09:00 AM - 09:00 PM (Lunch: 01:00 PM - 02:00 PM)",
+      "saturday": "09:00 AM - 09:00 PM (Lunch: 01:00 PM - 02:00 PM)",
+      "sunday": "Closed"
+    },
+    "aboutEn": "Isai Marketing Agency & Yazh City Property Picks is promoted by S.Tamilselvan at Salem. We work hard to provide excellent customer service to all our clients. We are your trusted partner in Salem for premium home appliances, RO water purifiers, and stainless steel (SS) products. We provide expert sales, installation, maintenance, and repair services across all major brands. We also cater to industrial water plants (100 to 1000 liters) and offer real estate solutions in Salem and surrounding areas up to 60 km.",
+    "aboutTa": "Isai Marketing Agency & Yazh City Property Picks-க்கு உங்களை வரவேற்கிறோம்! நாங்கள் உயர்தர பொருட்கள் மற்றும் அனுபவம் வாய்ந்த தொழில்நுட்ப வல்லுநர்களைப் கொண்டு அனைத்து RO வாட்டர் ப்யூரிஃபைர் & ஸ்பேர்ஸ், வாஷிங் மெஷின், மிகக்ஸி, கிரைண்டர், சீலிங் ஃபேன், டேபிள் ஃபேன், வாட்டர் ஹீட்டர், இண்டக்ஷன் ஸ்டவ், கேஸ் ஸ்டவ் உள்ளிட்ட அனைத்து வகையான வீட்டு உபயோக பொருட்களும் சிறந்த முறையில் சேல்ஸ் மற்றும் சர்வீஸ் செய்து தருகிறோம். மேலும் சேலத்தில் சுமார் 60 கி.மீ. தொலைவில் வீடு, நிலம் மற்றும் பண்ணை நிலம் வாங்க விற்க எங்களை அணுகவும்."
+  },
+  "offer": {
+    "active": true,
+    "title": "FESTIVE MEGA OFFER & EASY EMI",
+    "badge": "EASY EMI COMING SOON....",
+    "description": "Best price guarantee with doorstep delivery & installation on all home appliances in Salem!",
+    "image": "https://d171jb2uwdr9zn.cloudfront.net/unsafe/200x200/middle/smart/filters:strip_icc():strip_exif():format(webp)/https://ukno.in/uploads/images/ISAI_MARKETING_AGENCY__featured_796148875.jpg"
+  },
+  "services": [
+    {
+      "id": "srv-1",
+      "title": "Home Appliance Sales & Services",
+      "icon": "bi-shield-check",
+      "description": "Sales, installation and doorstep repair for AC, Refrigerators, Washing Machines and all major household appliances.",
+      "highlight": "Doorstep Service Available"
+    },
+    {
+      "id": "srv-2",
+      "title": "RO Water Purifier Sales & Services",
+      "icon": "bi-droplet-half",
+      "description": "Domestic RO water purifiers, branded filters, original spare parts, and industrial RO plants ranging from 100 to 1000 Litres.",
+      "highlight": "100L - 1000L Plants & Spares"
+    },
+    {
+      "id": "srv-3",
+      "title": "Ceiling & Table Fan Winding Works",
+      "icon": "bi-fan",
+      "description": "Expert copper coil rewinding, bearing replacement, noise fixes, and speed restoration for all ceiling, table, and wall fans.",
+      "highlight": "Specialist in Salem"
+    },
+    {
+      "id": "srv-4",
+      "title": "Mixer / Heater / Grinder & Induction Services",
+      "icon": "bi-lightning-charge",
+      "description": "Quick repairs for Mixers, Wet Grinders, Water Heaters (Geysers), Induction Cooktops, and motor rewinding works.",
+      "highlight": "Same Day Service"
+    },
+    {
+      "id": "srv-5",
+      "title": "Stainless Steel (SS) Custom Products",
+      "icon": "bi-gem",
+      "description": "Custom manufactured high-grade SS domestic and commercial products crafted according to your custom order specifications.",
+      "highlight": "Custom Made to Order"
+    },
+    {
+      "id": "srv-6",
+      "title": "Real Estate (Yazh City Property Picks)",
+      "icon": "bi-houses",
+      "description": "Trusted real estate guidance for buying and selling homes, DTCP approved plots, commercial lands, and farmlands up to 60 km around Salem.",
+      "highlight": "Salem & 60 km Surrounding"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-1",
+      "name": "Crompton SUREBREEZE SEA SAPPHIRA 1200 mm",
+      "category": "Ceiling Fans",
+      "mrp": 2599,
+      "price": 2000,
+      "description": "BEE Star Rated Energy Efficient Fan | Superior Air Delivery | High Speed | 2 Years Warranty | Ivory Color.",
+      "image": "https://d171jb2uwdr9zn.cloudfront.net/unsafe/280x0/middle/smart/filters:strip_icc():strip_exif():format(webp)/https://ukno.in/uploads/thumbs/ISAI_MARKETING_AGENCY__featured_1467817833.jpg",
+      "inStock": true,
+      "badge": "Popular"
+    },
+    {
+      "id": "prod-2",
+      "name": "Bajaj Frore 1200 MM (48\") Ceiling Fan",
+      "category": "Ceiling Fans",
+      "mrp": 3200,
+      "price": 2300,
+      "description": "1 Star Rated Energy Efficient Ceiling Fan | Rust Free Coating For Long Life | High Air Delivery | 2-Yr Warranty [Brown].",
+      "image": "https://d171jb2uwdr9zn.cloudfront.net/unsafe/280x0/middle/smart/filters:strip_icc():strip_exif():format(webp)/https://ukno.in/uploads/thumbs/ISAI_MARKETING_AGENCY__featured_1708687299.jpg",
+      "inStock": true,
+      "badge": "Best Seller"
+    },
+    {
+      "id": "prod-3",
+      "name": "Havells 1200mm Ambrose Energy Saving Fan",
+      "category": "Ceiling Fans",
+      "mrp": 3675,
+      "price": 2499,
+      "description": "Premium Decorative Finish, Elegant Looks, High Air Delivery, 100% Pure Copper Motor | 2 Yr Brand Warranty [Cola Espresso Brown].",
+      "image": "https://d171jb2uwdr9zn.cloudfront.net/unsafe/280x0/middle/smart/filters:strip_icc():strip_exif():format(webp)/https://ukno.in/uploads/thumbs/ISAI_MARKETING_AGENCY__featured_657148907.jpg",
+      "inStock": true,
+      "badge": "Top Rated"
+    },
+    {
+      "id": "prod-4",
+      "name": "USHA RACER High Speed Ceiling Fan",
+      "category": "Ceiling Fans",
+      "mrp": 2800,
+      "price": 2000,
+      "description": "Ultra high speed 400 RPM fan, gloss powder coating for superior finish, high air delivery with aerodynamic blades.",
+      "image": "https://d171jb2uwdr9zn.cloudfront.net/unsafe/280x0/middle/smart/filters:strip_icc():strip_exif():format(webp)/https://ukno.in/uploads/thumbs/ISAI_MARKETING_AGENCY__featured_191962315.jpg",
+      "inStock": true,
+      "badge": "Best Value"
+    },
+    {
+      "id": "prod-5",
+      "name": "USHA MIST AIR FLO Standing Pedestal Fan",
+      "category": "Table & Pedestal Fans",
+      "mrp": 4999,
+      "price": 3800,
+      "description": "Aerodynamically designed semi-transparent blades, 100% copper motor, 3-speed oscillation control, thermal overload protector.",
+      "image": "https://d171jb2uwdr9zn.cloudfront.net/unsafe/280x0/middle/smart/filters:strip_icc():strip_exif():format(webp)/https://ukno.in/uploads/thumbs/ISAI_MARKETING_AGENCY__featured_101168258.jpg",
+      "inStock": true,
+      "badge": "Heavy Duty"
+    },
+    {
+      "id": "prod-6",
+      "name": "V-GUARD Premium Ceiling Fan",
+      "category": "Ceiling Fans",
+      "mrp": 3999,
+      "price": 3200,
+      "description": "High performance copper motor, superior airflow even at low voltage, anti-dust coating, 2 years brand warranty.",
+      "image": "https://d171jb2uwdr9zn.cloudfront.net/unsafe/280x0/middle/smart/filters:strip_icc():strip_exif():format(webp)/https://ukno.in/uploads/thumbs/ISAI_MARKETING_AGENCY__featured_2020909860.jpg",
+      "inStock": true,
+      "badge": "Reliable"
+    },
+    {
+      "id": "prod-7",
+      "name": "V-GUARD High Air Table Fan",
+      "category": "Table & Pedestal Fans",
+      "mrp": 3999,
+      "price": 2900,
+      "description": "Compact and powerful table fan with silent operation, jerk-free oscillation, strong guard wire, and easy tilt adjustment.",
+      "image": "https://d171jb2uwdr9zn.cloudfront.net/unsafe/280x0/middle/smart/filters:strip_icc():strip_exif():format(webp)/https://ukno.in/uploads/thumbs/ISAI_MARKETING_AGENCY__featured_1609926304.jpg",
+      "inStock": true,
+      "badge": "Popular"
+    },
+    {
+      "id": "prod-8",
+      "name": "Preeti Induction Stove (1600W - 2100W)",
+      "category": "Kitchen Appliances",
+      "mrp": 4599,
+      "price": 3200,
+      "description": "High efficiency electromagnetic induction cooktop, preset Indian cooking menus, auto shut-off safety protection, touch panel.",
+      "image": "https://d171jb2uwdr9zn.cloudfront.net/unsafe/280x0/middle/smart/filters:strip_icc():strip_exif():format(webp)/https://ukno.in/uploads/thumbs/ISAI_MARKETING_AGENCY__featured_930442950.jpg",
+      "inStock": true,
+      "badge": "Save ₹1399"
+    },
+    {
+      "id": "prod-9",
+      "name": "Crompton Wall Mount Fan",
+      "category": "Table & Pedestal Fans",
+      "mrp": 6199,
+      "price": 4800,
+      "description": "Heavy-duty wall mounting fan with pull cords for speed and oscillation, wide coverage airflow, ideal for living rooms & shops.",
+      "image": "https://d171jb2uwdr9zn.cloudfront.net/unsafe/280x0/middle/smart/filters:strip_icc():strip_exif():format(webp)/https://ukno.in/uploads/thumbs/ISAI_MARKETING_AGENCY__featured_456576811.jpg",
+      "inStock": true,
+      "badge": "Space Saver"
+    },
+    {
+      "id": "prod-10",
+      "name": "Crompton Zelus WAC 54 Desert Air Cooler",
+      "category": "Air Coolers",
+      "mrp": 10000,
+      "price": 7300,
+      "description": "54 Litre tank capacity with powerful air delivery, motorized louvers, honeycomb cooling pads, and inverter compatibility.",
+      "image": "https://d171jb2uwdr9zn.cloudfront.net/unsafe/280x0/middle/smart/filters:strip_icc():strip_exif():format(webp)/https://ukno.in/uploads/thumbs/ISAI_MARKETING_AGENCY__featured_1444434464.jpg",
+      "inStock": true,
+      "badge": "Save ₹2700"
+    },
+    {
+      "id": "prod-11",
+      "name": "Rally 40L Tower Air Cooler",
+      "category": "Air Coolers",
+      "mrp": 8000,
+      "price": 7200,
+      "description": "40 Litres compact air cooler with high efficiency cooling pads, 3-speed speed fan, ice chamber, and castor wheels for easy mobility.",
+      "image": "https://d171jb2uwdr9zn.cloudfront.net/unsafe/280x0/middle/smart/filters:strip_icc():strip_exif():format(webp)/https://ukno.in/uploads/thumbs/ISAI_MARKETING_AGENCY__featured_1163917545.jpg",
+      "inStock": true,
+      "badge": "Energy Saver"
+    },
+    {
+      "id": "prod-12",
+      "name": "Crompton Personal Air Cooler 10L",
+      "category": "Air Coolers",
+      "mrp": 5199,
+      "price": 4500,
+      "description": "10L portable personal air cooler, compact design for study room or office cabins, low power consumption, quiet operation.",
+      "image": "https://d171jb2uwdr9zn.cloudfront.net/unsafe/280x0/middle/smart/filters:strip_icc():strip_exif():format(webp)/https://ukno.in/uploads/thumbs/ISAI_MARKETING_AGENCY__featured_1011378771.jpg",
+      "inStock": true,
+      "badge": "Portable"
+    },
+    {
+      "id": "prod-13",
+      "name": "Anjali Tower Fan (High Velocity Air)",
+      "category": "Table & Pedestal Fans",
+      "mrp": 3599,
+      "price": 2599,
+      "description": "Sleek vertical tower fan, powerful blower airflow, lightweight and space-saving, low noise motor with wide angle oscillation.",
+      "image": "https://d171jb2uwdr9zn.cloudfront.net/unsafe/280x0/middle/smart/filters:strip_icc():strip_exif():format(webp)/https://ukno.in/uploads/thumbs/ISAI_MARKETING_AGENCY__featured_616412527.jpg",
+      "inStock": true,
+      "badge": "Trendy"
+    },
+    {
+      "id": "prod-14",
+      "name": "Orient Magic Cool DX 50L Air Cooler",
+      "category": "Air Coolers",
+      "mrp": 11490,
+      "price": 8500,
+      "description": "50 Litres high air delivery cooler, dense honeycomb pads with anti-bacterial filter, ice compartment, auto swing.",
+      "image": "https://d171jb2uwdr9zn.cloudfront.net/unsafe/280x0/middle/smart/filters:strip_icc():strip_exif():format(webp)/https://ukno.in/uploads/thumbs/ISAI_MARKETING_AGENCY__featured_944142691.jpg",
+      "inStock": true,
+      "badge": "Best Offer"
+    },
+    {
+      "id": "prod-15",
+      "name": "Symphony 60L Jumbo Air Cooler",
+      "category": "Air Coolers",
+      "mrp": 11000,
+      "price": 10200,
+      "description": "60 Litres large capacity cooler designed for large living halls and commercial halls, whisper-quiet powerful fan, low power use.",
+      "image": "https://d171jb2uwdr9zn.cloudfront.net/unsafe/280x0/middle/smart/filters:strip_icc():strip_exif():format(webp)/https://ukno.in/uploads/thumbs/ISAI_MARKETING_AGENCY__featured_801981426.jpg",
+      "inStock": true,
+      "badge": "Large Capacity"
+    },
+    {
+      "id": "prod-16",
+      "name": "Kenstar 45L Desert Air Cooler",
+      "category": "Air Coolers",
+      "mrp": 9999,
+      "price": 8000,
+      "description": "45 Litres heavy airflow cooler, durable rust-proof body, powerful throw up to 35 feet, multi-directional castor wheels.",
+      "image": "https://d171jb2uwdr9zn.cloudfront.net/unsafe/280x0/middle/smart/filters:strip_icc():strip_exif():format(webp)/https://ukno.in/uploads/thumbs/ISAI_MARKETING_AGENCY__featured_1177118525.jpg",
+      "inStock": true,
+      "badge": "Save ₹1999"
+    },
+    {
+      "id": "prod-17",
+      "name": "Crompton Heavy Dry Iron Box",
+      "category": "Home Utilities",
+      "mrp": 1499,
+      "price": 1099,
+      "description": "Non-stick coated soleplate for smooth glide, adjustable temperature dial for all fabrics, 360-degree swivel cord, shockproof body.",
+      "image": "https://d171jb2uwdr9zn.cloudfront.net/unsafe/280x0/middle/smart/filters:strip_icc():strip_exif():format(webp)/https://ukno.in/uploads/thumbs/ISAI_MARKETING_AGENCY__featured_1876446099.png",
+      "inStock": true,
+      "badge": "Essential"
+    },
+    {
+      "id": "prod-18",
+      "name": "V-Guard Induction Cooktop (3 Years Warranty)",
+      "category": "Kitchen Appliances",
+      "mrp": 4200,
+      "price": 3100,
+      "description": "3 Years Comprehensive Warranty | Digital LED display, spill-proof cooking surface, fast heating technology, auto cut-off.",
+      "image": "https://d171jb2uwdr9zn.cloudfront.net/unsafe/280x0/middle/smart/filters:strip_icc():strip_exif():format(webp)/https://ukno.in/uploads/thumbs/ISAI_MARKETING_AGENCY__featured_1466827202.png",
+      "inStock": true,
+      "badge": "3 Yrs Warranty"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev-1",
+      "name": "Mahalakshmi",
+      "rating": 5,
+      "date": "Sep 18, 2026",
+      "comment": "Good service, very affordable price. Technicians explained everything clearly."
+    },
+    {
+      "id": "rev-2",
+      "name": "Saravanan Motors",
+      "rating": 5,
+      "date": "Sep 17, 2026",
+      "comment": "Price & services are very best in Salem. Motor winding work was perfect."
+    },
+    {
+      "id": "rev-3",
+      "name": "PRIYANKA",
+      "rating": 5,
+      "date": "Sep 16, 2026",
+      "comment": "Best place for on time Delivery and genuine home appliance service."
+    },
+    {
+      "id": "rev-4",
+      "name": "VENKATESAN J",
+      "rating": 5,
+      "date": "Sep 16, 2026",
+      "comment": "Product service & best price. Highly recommended for RO purifier service."
+    },
+    {
+      "id": "rev-5",
+      "name": "Ramkumar",
+      "rating": 5,
+      "date": "Sep 16, 2026",
+      "comment": "Compare than other shops price was very affordable. Good customer support."
+    },
+    {
+      "id": "rev-6",
+      "name": "MURUGAN",
+      "rating": 5,
+      "date": "Sep 08, 2026",
+      "comment": "மிகச் சிறந்த சேவை மற்றும் நியாயமான விலை. நன்றி!"
+    },
+    {
+      "id": "rev-7",
+      "name": "Thalapathy Vetri Kondan",
+      "rating": 5,
+      "date": "Sep 08, 2026",
+      "comment": "Customer satisfaction is top priority. No compromise on quality. Very affordable price range. Customer treated with kind manner."
+    },
+    {
+      "id": "rev-8",
+      "name": "Rajavel S",
+      "rating": 5,
+      "date": "Sep 08, 2026",
+      "comment": "Excellent customer service and prompt doorstep visit for my cooler and fan."
+    },
+    {
+      "id": "rev-9",
+      "name": "Michael",
+      "rating": 5,
+      "date": "Sep 08, 2026",
+      "comment": "Excellent service and quality products! Great collection of home appliances at reasonable prices. Staff are friendly and helpful."
+    },
+    {
+      "id": "rev-10",
+      "name": "Tamil",
+      "rating": 5,
+      "date": "Apr 30, 2026",
+      "comment": "ON TIME DELIVERY WITH AFFORDABLE PRICE. Trustworthy shop in Shevapet."
+    },
+    {
+      "id": "rev-11",
+      "name": "DHINESHBABU R",
+      "rating": 5,
+      "date": "Feb 21, 2026",
+      "comment": "All work good and very cool person Mr. Tamilselvan.... thank you!"
+    }
+  ],
+  "gallery": [
+    "https://ukno.in/uploads/images/ISAI_MARKETING_AGENCY__featured_145921516.png",
+    "https://ukno.in/uploads/gallery/ISAI_MARKETING_AGENCY__558958062.jpg",
+    "https://ukno.in/uploads/gallery/ISAI_MARKETING_AGENCY__760444084.jpg",
+    "https://ukno.in/uploads/gallery/ISAI_MARKETING_AGENCY__643138277.jpg",
+    "https://ukno.in/uploads/gallery/ISAI_MARKETING_AGENCY__1608551683.png",
+    "https://ukno.in/uploads/gallery/ISAI_MARKETING_AGENCY__839832291.png",
+    "https://ukno.in/uploads/gallery/ISAI_MARKETING_AGENCY__1004762328.jpg",
+    "https://ukno.in/uploads/gallery/ISAI_MARKETING_AGENCY__221205269.jpg",
+    "https://ukno.in/uploads/gallery/ISAI_MARKETING_AGENCY__208831107.jpg",
+    "https://ukno.in/uploads/gallery/ISAI_MARKETING_AGENCY__2053933030.jpg",
+    "https://ukno.in/uploads/gallery/ISAI_MARKETING_AGENCY__475884965.jpg",
+    "https://ukno.in/uploads/gallery/ISAI_MARKETING_AGENCY__1229278382.jpeg"
+  ],
+  "properties": [
+    {
+      "id": "prop-1",
+      "title": "Individual Villa / Residential House",
+      "location": "Near Shevapet & Surrounding Salem",
+      "size": "1200 - 2400 Sq.Ft",
+      "type": "Residential",
+      "price": "Contact for Best Price",
+      "description": "Ready to move villas and houses with good groundwater and clear DTCP approval.",
+      "image": "https://ukno.in/uploads/gallery/ISAI_MARKETING_AGENCY__1004762328.jpg"
+    },
+    {
+      "id": "prop-2",
+      "title": "Agricultural Farmland & Mango Groves",
+      "location": "Within 60 km around Salem",
+      "size": "1 to 10 Acres",
+      "type": "Farmland",
+      "price": "Attractive Acre Rates",
+      "description": "Fertile red soil farmland suitable for organic farming, coconut trees or farmhouse investment.",
+      "image": "https://ukno.in/uploads/gallery/ISAI_MARKETING_AGENCY__221205269.jpg"
+    },
+    {
+      "id": "prop-3",
+      "title": "DTCP Approved Residential Plots",
+      "location": "Salem Outer & Highway Belts",
+      "size": "800 - 1800 Sq.Ft",
+      "type": "Plots",
+      "price": "Starting from ₹1200 / Sq.Ft",
+      "description": "Gated community plots with blacktop roads, streetlights and immediate bank loan approvals.",
+      "image": "https://ukno.in/uploads/gallery/ISAI_MARKETING_AGENCY__643138277.jpg"
+    }
+  ],
+  "enquiries": []
+}

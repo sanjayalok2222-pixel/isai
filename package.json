@@ -1,0 +1,24 @@
+{
+  "name": "isai-marketing",
+  "version": "1.0.0",
+  "description": "Isai Marketing Agency & Yazh City Property Picks - Home Appliances & Services Web Store with Dynamic Admin & Auto Git Push",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "watch": "node auto-push.js"
+  },
+  "keywords": [
+    "home-appliances",
+    "salem",
+    "isai-marketing",
+    "ro-purifiers",
+    "rewinding-works",
+    "e-commerce"
+  ],
+  "author": "Sanjay / Isai Marketing",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5"
+  }
+}
